@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #16384d;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0f5f94;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #0f5f94;
+  margin-top: 0;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #f7fbff;
+  box-shadow: 0 8px 18px rgba(15, 95, 148, 0.12);
+}
+
+th,
+td {
+  border: 1px solid #bdd8ea;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-image: linear-gradient(to right, #0f689f, #2ca6da);
+  color: #ffffff;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(to right, #eef8ff, #dff1fb);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #f2faff, #e3f4ff);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #e9f6ff, #d5eefc);
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: none;
+  background: none;
+}
+
+tr[class="read"] span[class="status"] {
+  border: none;
+  background: none;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: none;
+  background: none;
+}
+
+span[class="status"],
+span[class^="rate"] {
+  height: 24px;
+  width: 90px;
+  padding: 4px;
+}
+
+.status {
+  text-align: center;
+  font-weight: bold;
+  color: #07253a;
+}
+
+span[class^="rate"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: auto;
+  min-width: auto;
+  background: none;
+  padding: 2px 0;
+}
+
+span[class^="rate"] > span {
+  border: none;
+  border-radius: 50%;
+  margin: 0;
+  height: 12px;
+  width: 12px;
+  background: #c9dfef;
+  box-shadow: inset 0 0 0 1px #a9cbe1;
+}
+
+span[class~="one"] span:first-child {
+  background-image: linear-gradient(to right, #1f88c1, #71cbf1);
+  box-shadow: 0 0 0 1px #1f88c1, 0 0 8px rgba(31, 136, 193, 0.35);
+}
+
+span[class~="two"] span:nth-child(1),
+span[class~="two"] span:nth-child(2) {
+  background-image: linear-gradient(to right, #1f88c1, #71cbf1);
+  box-shadow: 0 0 0 1px #1f88c1, 0 0 8px rgba(31, 136, 193, 0.35);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(to right, #1f88c1, #71cbf1);
+  box-shadow: 0 0 0 1px #1f88c1, 0 0 8px rgba(31, 136, 193, 0.35);
+}
+
+.reflection {
+  width: 90%;
+  margin: 24px auto 0;
+  padding: 20px;
+  border: 1px solid #c2ddf0;
+  background-color: #f7fbff;
+  box-shadow: 0 8px 18px rgba(15, 95, 148, 0.1);
+}
+
+p {
+  line-height: 1.6;
+}
